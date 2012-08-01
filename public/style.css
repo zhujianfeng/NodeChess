@@ -1,0 +1,12 @@
+#chessCanvas {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 0;
+}
+#PiecesCanvas {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 9999;
+}

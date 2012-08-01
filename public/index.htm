@@ -1,0 +1,28 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Language" content="zh-cn" />
+    <title>象棋示例</title>
+    <link charset="utf-8" rel="stylesheet" href="style.css" type="text/css" />
+    <script type="text/javascript" src="/socket.io/socket.io.js"></script>
+    <script type="text/javascript" src="jquery-1.7.2.min.js" charset="utf-8"></script>
+    <script type="text/javascript" src="chess.js" charset="utf-8"></script>
+</head>
+<body>
+<canvas id="chessCanvas" width="600" height="600">
+    您的浏览器不支持canvas，推荐使用chrome！
+</canvas>
+<canvas id="PiecesCanvas" width="600" height="600"></canvas>
+<div id="login">
+    <div><input id="username" /><input type="submit" value="登录" onclick="submitUserName()"/></div>
+</div>
+<div id="onlinelist">
+    <div id="namelist">
+
+    </div>
+    <input type="submit" value="开始" onclick="beginChess()"/>
+</div>
+</body>
+</html>

@@ -1,0 +1,11 @@
+<div id="test"></div>
+<script type="text/javascript">
+function $(id){
+	return document.getElementById(id);
+}
+var w=new WebSocket('ws://www.zhujianfeng.info:8080/');
+w.onopen=function(){}
+w.onmessage=function(data){
+	$('test').innerHTML=$('test').innerHTML+"<br>"+data;
+}
+</script>
